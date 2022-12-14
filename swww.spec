@@ -1,5 +1,5 @@
 Name:           swww
-Version:        0.4.3
+Version:        0.6.0
 Release:        1
 URL:            https://github.com/Horus645/swww
 Source0:        https://github.com/Horus645/swww/archive/refs/tags/v%{version}.tar.gz
