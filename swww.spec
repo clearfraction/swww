@@ -1,5 +1,5 @@
 Name:           swww
-Version:        0.6.0
+Version:        0.7.1
 Release:        1
 URL:            https://github.com/Horus645/swww
 Source0:        https://github.com/Horus645/swww/archive/refs/tags/v%{version}.tar.gz
@@ -19,7 +19,7 @@ cargo fetch --locked
 
 
 %build
-export RUSTFLAGS="$RUSTFLAGS -C target-cpu=westmere -C target-feature=+avx -C opt-level=3"
+export RUSTFLAGS="$RUSTFLAGS -C target-cpu=westmere -C target-feature=+avx -C opt-level=3 -C codegen-units=1 -C panic=abort -Clink-arg=-Wl,-z,now,-z,relro,-z,max-page-size=0x4000,-z,separate-code"
 cargo build --release --locked --offline
 
 
