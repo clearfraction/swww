@@ -27,6 +27,7 @@ cargo build --release --locked --offline
 install -D -m755 target/release/swww %{buildroot}/usr/bin/swww
 install -m644 completions/swww.bash -pD %{buildroot}/usr/share/bash-completion/completions/swww.fish
 install -m644 completions/swww.fish -pD %{buildroot}/usr/share/fish/vendor_completions.d/swww.fish
+strip --strip-debug %{buildroot}/usr/bin/swww
 
 %files
 %defattr(-,root,root,-)
