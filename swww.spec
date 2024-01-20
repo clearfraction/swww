@@ -1,8 +1,8 @@
 Name:           swww
-Version:        0.8.1
+Version:        0.8.2
 Release:        1
-URL:            https://github.com/Horus645/swww
-Source0:        https://github.com/Horus645/swww/archive/refs/tags/v%{version}.tar.gz
+URL:            https://github.com/LGFae/swww
+Source0:        https://github.com/LGFae/swww/archive/refs/tags/v%{version}.tar.gz
 Summary:        Efficient animated wallpaper daemon for Wayland, controlled at runtime.
 License:        GPLv3
 BuildRequires:  rustc
