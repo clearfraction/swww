@@ -1,5 +1,5 @@
 Name:           swww
-Version:        0.8.2
+Version:        %(unset https_proxy && curl -s https://api.github.com/repos/LGFae/swww/releases/latest | grep -oP '"tag_name": "v\K(.*)(?=")')
 Release:        1
 URL:            https://github.com/LGFae/swww
 Source0:        https://github.com/LGFae/swww/archive/refs/tags/v%{version}.tar.gz
